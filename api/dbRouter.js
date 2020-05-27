@@ -29,7 +29,7 @@ router.get('/:id', (request, response) => {
 });
 
 router.post('/', (req, res) => {
-  const carData = req.body;
+    const carData = req.body;
 
     db('cars').insert(carData)
     .then(ids => {
